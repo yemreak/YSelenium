@@ -6,27 +6,21 @@
 
 ## İçerikler <!-- omit in toc -->
 
-- [Selenium Notları](#selenium-notlar%C4%B1)
+- [Sistem Yapısı](#sistem-yap%C4%B1s%C4%B1)
 - [GettyImage](#gettyimage)
   - [Operatör Sabitleri](#operat%C3%B6r-sabitleri)
   - [Sayfa Sabitleri](#sayfa-sabitleri)
+- [Selenium Notları](#selenium-notlar%C4%B1)
 - [TODO](#todo)
 - [Lisans ve Teferruatlar](#lisans-ve-teferruatlar)
 
-## Selenium Notları
+## Sistem Yapısı
 
-<!-- TODO Selenium notlarını arttık, YSelenium dökümanına ekle -->
+Her bir selenium script'ini `controller` üzerinden çalıştırabilirsiniz
 
-- Colab üzerinde (GUI'siz platformlarda) kullanılmak istenirse GUI kapatılmalıdır.
-  - `config.py` içerisindeki `HIDE_BROWSER` `True` olmalı
-- Javascript'ler *minify* edilmek zorunda aksi halde çalışmaz.
-- Javascript'ler her sekme için ayrıca dahil edilmelidir.
-- Global fonksiyonlar `window.` formatında olmalıdır
-  - Python içerisinde kullanımda `window` yazmaya gerek yoktur
-  - Örn: `window.temp = 5`, pythonda kullanım `driver.execute_script('return temp')`
-- `driver` objesi 1 sekmeyi temsil etmekte
-  - `driver.close` denirse o sekme kapanır
-  - `driver.switch_to.window(driver.window_handles[1])` ile sekme arası yolculuk
+- [Getty Images](controllers/gettyimages.py)
+- [Kariyer](controllers/kariyer.py)
+- [Berkeley](controllers/berkeley.py)
 
 ## GettyImage
 
@@ -46,6 +40,21 @@ Gettyimages üzerindeki resimleri toplu olarak indirmeyi sağlar
 | ---------- | --------------------------------------------- |
 | `PAGE`     | Kaç sayfa tekrar edeceğini bildirir           |
 | `PAGE_URL` | Sayfa değerinin olduğu kısmın `{}` olduğu url |
+
+## Selenium Notları
+
+<!-- TODO Selenium notlarını arttık, YSelenium dökümanına ekle -->
+
+- Colab üzerinde (GUI'siz platformlarda) kullanılmak istenirse GUI kapatılmalıdır.
+  - `config.py` içerisindeki `HIDE_BROWSER` `True` olmalı
+- Javascript'ler *minify* edilmek zorunda aksi halde çalışmaz.
+- Javascript'ler her sekme için ayrıca dahil edilmelidir.
+- Global fonksiyonlar `window.` formatında olmalıdır
+  - Python içerisinde kullanımda `window` yazmaya gerek yoktur
+  - Örn: `window.temp = 5`, pythonda kullanım `driver.execute_script('return temp')`
+- `driver` objesi 1 sekmeyi temsil etmekte
+  - `driver.close` denirse o sekme kapanır
+  - `driver.switch_to.window(driver.window_handles[1])` ile sekme arası yolculuk
 
 ## TODO
 
