@@ -15,11 +15,8 @@ SCRIPT_PATH = "javascripts/gettyImages.js"
 
 # Yükleme Ayarları
 DOWNLOAD = False
-DOWNLOAD_DIR = "downloads"
-
 # URL Dosyası ayarları
 WRITE_FILE = True
-
 # Ek Ayarlar
 DEBUG = True
 

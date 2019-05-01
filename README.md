@@ -1,8 +1,17 @@
-# Selenium
+# YSelenium <!-- omit in toc -->
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/yedhrab/YSelenium.svg?label=Son%20G%C3%BCncelleme&style=popout)
 ![GitHub](https://img.shields.io/github/license/yedhrab/YSelenium.svg?label=Lisans&style=popout)
 ![GitHub repo size](https://img.shields.io/github/repo-size/yedhrab/YSelenium.svg?label=Boyut&style=popout)
+
+## İçerikler <!-- omit in toc -->
+
+- [Selenium Notları](#selenium-notlar%C4%B1)
+- [GettyImage](#gettyimage)
+  - [Operatör Sabitleri](#operat%C3%B6r-sabitleri)
+  - [Sayfa Sabitleri](#sayfa-sabitleri)
+- [TODO](#todo)
+- [Lisans ve Teferruatlar](#lisans-ve-teferruatlar)
 
 ## Selenium Notları
 
@@ -18,6 +27,25 @@
 - `driver` objesi 1 sekmeyi temsil etmekte
   - `driver.close` denirse o sekme kapanır
   - `driver.switch_to.window(driver.window_handles[1])` ile sekme arası yolculuk
+
+## GettyImage
+
+Gettyimages üzerindeki resimleri toplu olarak indirmeyi sağlar
+
+### Operatör Sabitleri
+
+| Değişken     | Açıklama                             |
+| ------------ | ------------------------------------ |
+| `DOWNLOAD`   | Bulunan urlleri indirir              |
+| `WRITE_FILE` | Bulunan url'leri dosyaya yazar       |
+| `DEBUG`      | Ekrana bilgilendirme çıktıları basar |
+
+### Sayfa Sabitleri
+
+| Değişken   | Açıklama                                      |
+| ---------- | --------------------------------------------- |
+| `PAGE`     | Kaç sayfa tekrar edeceğini bildirir           |
+| `PAGE_URL` | Sayfa değerinin olduğu kısmın `{}` olduğu url |
 
 ## TODO
 
