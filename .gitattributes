@@ -1,0 +1,3 @@
+# Python dilinin yakalanması için
+* linguist-vendored
+*.py linguist-vendored=false
