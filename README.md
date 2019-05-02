@@ -6,6 +6,7 @@
 
 ## İçerikler <!-- omit in toc -->
 
+- [İnternetten Veri Çekme Kuralı](#i%CC%87nternetten-veri-%C3%A7ekme-kural%C4%B1)
 - [Sistem Yapısı](#sistem-yap%C4%B1s%C4%B1)
 - [GettyImage](#gettyimage)
   - [Operatör Sabitleri](#operat%C3%B6r-sabitleri)
@@ -13,6 +14,10 @@
 - [Selenium Notları](#selenium-notlar%C4%B1)
 - [TODO](#todo)
 - [Lisans ve Teferruatlar](#lisans-ve-teferruatlar)
+
+## İnternetten Veri Çekme Kuralı
+
+![kural](res/scraping_flowchart.png)
 
 ## Sistem Yapısı
 
